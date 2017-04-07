@@ -1,0 +1,403 @@
+
+body {
+    background: none;
+     background-image: url("../image/back.png");       /* This gives background color of the web page */
+     color: red;                                     /* This sets default color of text in web page */
+     line-height: 16px;                                /* This sets default line height */
+     text-align: left;                                   /* This sets default text align to left */
+     margin: 0 auto;                                     /* This centers the body of the web page */
+     width: 70%;
+}
+
+}
+/* This sets combined property for headings */
+h2, h3, h4, h5, h6 {
+    color: white;
+    line-height: 0;
+    margin-bottom: 16px;
+}
+
+/***********************************************
+******************** LINKS *********************
+************************************************/
+
+/* This sets default property for links in the website */
+a:link {
+    padding: 0 1px; /* This sets padding (space inside border) for hyperlinks */
+    color: green;
+    text-decoration: none;    /* This removes underline from the hyperlinks */
+}
+
+}
+
+/* This sets property for hover and active links */
+
+a:hover,{
+    color: red;
+}
+a:active
+{
+  color: blue
+}
+/******* HEADER **/
+
+/* This sets property for main header class of website body */
+.main_header {
+  clear: both;  /* This removes all elements floating left and right of the container */
+  overflow: auto; /* This sets automatic handling of overflown elements by browser */
+}
+
+/*************************
+********* LOGO ***********
+**************************/
+/* This sets property for the website logo */
+#logo {
+    float: left; /* This floats the logo to left side */
+}
+#logo img{
+height: 74px;
+padding-top: 78px;
+border:1px;
+background-color:none ;
+position: relative;
+/* Safari 4.0 - 8.0 */
+-webkit-animation-name: example;
+-webkit-animation-duration: 5s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-delay: 2s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction: alternate;
+/* Standard syntax */
+animation-name: example;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+0%   {left:0px; top:0px;}
+25%  {left:20px; top:0px;}
+50%  {left:20px; top:20px;}
+75%  {left:0px; top:20px;}
+100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+0%   {left:0px; top:0px;}
+25%  {left:20px; top:0px;}
+50%  { left:20px; top:20px;}
+75%  {left:0px; top:20px;}
+100% {left:0px; top:0px;}
+}
+}
+/* This sets property for figcaption in logo */
+#logo figcaption {
+/*#hero {
+background-image: url('/image/banner1.jpg');
+background-size: cover;
+background-position: center center;
+position: relative;
+top: 0;
+bottom:0;
+height: 100vh;
+z-index: -10;
+*/
+}
+
+/*************************
+******* NAVIGATION *******
+**************************/
+
+/* This sets property for navigation bar of the website */
+nav {
+    margin: 90px 5px 5px 5px;                           /* This gives 90px margin in top, 5px in right, bottom and left */
+    padding: 8px;                                       /* This sets 8px padding for navigation */
+    height: 60px;                                       /* This sets height of the navigation bar */
+    width: auto;                                        /* This sets width of the navigation bar as per browser requirements */
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;                                 /* This makes the rectangular border with rounder corners with 5px */
+    -moz-border-radius: 5px;                            /* Same property for mozilla browser (browser specific code) */
+    -webkit-border-radius: 5px;                         /* Same property for webkit browsers (browser specific code) */
+    border: 2px solid white;                            /* This sets solid border with white color and 2px thik */
+    box-shadow: 0 0 5px #888;                           /* This provides shadow for the container of 5px */
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px #888;
+	}
+  nav ul li a { color: #EE2B32; padding-top: 43px;  }
+  nav ul li:nth-of-type(1){
+      background-image: url('../images/navigation/home.png');
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-position: center top;
+  }
+  nav ul li:nth-of-type(2){
+      background-image: url('../images/navigation/mycv.png');
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: center top;
+  }
+  nav ul li:nth-of-type(3){
+      background-image: url('../images/navigation/aboutme.png');
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-position: center top;
+  }
+  nav ul li:nth-of-type(4){
+      background-image: url('../images/navigation/contact.png');
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+
+    nav ul li:nth-of-type(1):hover {
+        background-image: url('../images/navigation/active_home.png');
+    }
+    nav ul li:nth-of-type(2):hover {
+        background-image: url('../images/navigation/active_mycv.png');
+    }
+    nav ul li:nth-of-type(3):hover {
+        background-image: url('../images/navigation/active_aboutme.png');
+    }
+    nav ul li:nth-of-type(4):hover {
+        background-image: url('../images/navigation/active_contac.png');
+    }
+
+/* This sets property unordered list in the navigation bar */
+.main_header nav ul {
+    list-style: none;/* This removes style from the unordered list */
+    margin: 0 auto;  /* This moves the container to the center */
+}
+
+/* This sets property for the list items in the navigation bar */
+.main_header nav ul li {
+    margin-right: 45px;
+    float: left;
+    display: inline;  /* This removes the default element property to display and sets inline display */
+    padding-top:40px;  /* This only gives padding to the top of the container */
+}
+
+/* This sets property for links in the navigation bar */
+.main_header nav a:link {
+    padding: 5px 15px;
+    text-decoration: none;
+
+}
+
+/* This sets property for visited links in the navigation bar */
+.main_header nav a:visited {
+    color: black;
+}
+
+/* This sets property for hover and active in the navigation bar */
+.main_header nav a:hover, .main_header nav a:active {
+    color: red;
+}
+
+
+/***********************************************
+******************** SLIDER ********************
+************************************************/
+
+/* This sets property for the slider */
+.slider {
+    margin: 0px 5px 5px 5px;
+    padding: 1px;
+    position: relative;                                     /* This sets relative position as per webpage */
+    overflow: hidden;                                       /* This hides any overflowing elements */
+    background-color:white;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 2px solid white;                                /* This sets 2px wide border with white color */
+    box-shadow: 0 0 5px;
+    -moz-box-shadow: 0 0 5px ;
+    -webkit-box-shadow: 0 0 5px;
+}
+/* This sets property for main content of the website */
+.main_content {
+    height: auto;
+    width: auto;
+}
+
+/* This sets property for paragraph with class name para */
+.para {
+    margin: 0px 5px 0px 5px;
+    padding: 2px 0px 0px 0px;
+    text-align: justify;     /* This jutifies the paragraph */
+    clear: both;
+    line-height: 1.5em;
+}
+
+/* This sets property for horizontal line */
+hr {
+    display: block;   /* This displays the element as block */
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    clear : both;
+}
+
+/* This creates material desgined box */
+.box {
+    text-align: center;
+    margin: 10px 5px 5px 5px;
+    padding: 0px 5px 0px 5px;
+    color:  red;
+    width: auto;
+    height: 45px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 5px red;
+    -moz-box-shadow: 0 0 5px red;
+    -webkit-box-shadow: 0 0 5px red;
+}
+
+/* This property combines with box to create blue colored box */
+.blue{
+    background-color:blue;
+    border-style: solid;
+   border-width:thin;
+}
+
+/* This property combines with box to create white colored box */
+.white{
+   border-style: inset;
+   border-width: thick;
+   width: 100%;
+
+}
+/* This sets property for footer of the website */
+.main_footer {
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    height: 20px;
+    width: auto;
+    background-color:lightgreen;
+    border-radius: 5px;
+    border: 2px solid lightblue;
+    box-shadow: 3px 4px 5px ;
+    -webkit-flex-basis: 16px
+
+
+}
+
+/* This sets property for unordered list of the footer */
+.main_footer ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+/* This sets property for unordered list items of the footer */
+.main_footer ul li {
+    float: left;
+    display: inline;
+}
+
+/* This sets property for links of the footer */
+.main_footer a:link{
+    padding: 10px 15px 20px 0px;
+    text-decoration: none;
+
+}
+
+/* This is the property for last list item in the footer list */
+.main_footer ul li:nth-of-type(7){
+    float: right;
+}
+/* This sets property for the contact page */
+.contact_form {
+    clear: both;
+}
+
+/* This sets property for unordered list of the contact page */
+.contact_form ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* This sets property for list iteams of the contact page */
+.contact_form ul li {
+    padding: 5px 10px;
+    position: relative;
+}
+
+/* This sets property for the labels of the contact page */
+.contact_form label {
+    margin: 0px 0px 5px 0px;
+    display: block;
+}
+
+/* This sets property for the input and textarea of the contact page */
+.contact_form input, .contact_form textarea {
+    height: 15px;
+    width: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 5px;
+    -moz-box-shadow: 0 0 5px ;
+    -webkit-box-shadow: 0 0 5px blue;
+}
+.contact_form textarea{
+height: 100px;
+  }
+/* This sets property for the sbmit button of the contact page */
+.contact_form #submit {
+    height: 40px;
+    width: auto;
+    padding: 0px 10px 0px 10px;
+    color:  white;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 5px;
+    -moz-box-shadow: 0 0 5px;
+    -webkit-box-shadow: 0 0 5px;
+}
+
+/* This sets property for the submit button when hovered of the contact page */
+.contact_form #submit:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px red;
+    -moz-box-shadow: 0 0 10px red;
+    -webkit-box-shadow: 0 0 5px red;
+}
+/* This sets the property for container holding pictures */
+.picture_box {
+   height: 1000px;
+   width: 95%;
+    background-color:white;
+    border-radius: 1px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border:1px solid white;
+    box-shadow: 0 0 5px;
+    -moz-box-shadow: 0 0 5px;
+    -webkit-box-shadow: 0 0 5px ;
+}
+.courses table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+.courses table td {
+    color: black;
+}
+.bachelors_table th, .bachelors_table td {
+    border: 1px solid green;
+
+}
+
+.bachelors_table th {
+    background-color:blue;
+
+}
